@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TagController">
+   <left>
+      <AnchorPane prefHeight="433.0" prefWidth="234.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="subname" layoutX="118.0" layoutY="109.0" prefHeight="18.0" prefWidth="142.0" text="Subject Name" />
+            <Label fx:id="rtag" layoutX="118.0" layoutY="190.0" prefHeight="18.0" prefWidth="142.0" text="Related Tag" />
+            <Label fx:id="subcode" layoutX="118.0" layoutY="147.0" prefHeight="18.0" prefWidth="142.0" text="Subject Code" />
+            <Button fx:id="tagsave" layoutX="157.0" layoutY="270.0" mnemonicParsing="false" onMouseClicked="#Save" prefHeight="26.0" prefWidth="120.0" style="-fx-background-color: #64FFDA;" text="Save" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="480.0" prefWidth="310.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="subjectname" layoutX="31.0" layoutY="104.0" promptText="DS" />
+            <TextField fx:id="subjectcode" layoutX="31.0" layoutY="146.0" promptText="IT3020" />
+            <Button fx:id="tagclear" layoutX="30.0" layoutY="270.0" mnemonicParsing="false" onAction="#cleartag" prefHeight="26.0" prefWidth="120.0" style="-fx-background-color: #FDD835;" text="Clear" />
+            <ComboBox fx:id="relatedtagc" layoutX="30.0" layoutY="187.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
